@@ -17,10 +17,8 @@ const typeDefs = gql`
 `;
 
 const server = new ApolloServer({
-
     typeDefs,
-    mocks:true,
-
+    mocks: true,
 });
 
 server.listen().then(({ url }) => {
